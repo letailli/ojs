@@ -90,6 +90,13 @@
 									{$author->getLocalizedAffiliation()|escape}
 								</span>
 							{/if}
+							
+							{if $author->getLocalizedBiography()}
+								<span class="biography">
+									{$author->getLocalizedBiography()|escape}
+								</span>
+							{/if}
+							
 							{if $author->getOrcid()}
 								<span class="orcid">
 									{$orcidIcon}
